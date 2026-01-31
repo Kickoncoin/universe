@@ -1,0 +1,15 @@
+Guía Esencial de GitHub para tus ProyectosGitHub no solo guarda tu código, sino que te permite mostrarlo al mundo. Aquí tienes los pasos básicos para empezar.1. Conceptos ClaveRepositorio (Repo): La carpeta del proyecto donde se guarda todo el código.Commit: Una "foto" o guardado de tus cambios con un mensaje explicativo.Push: Subir tus cambios locales a la nube de GitHub.GitHub Pages: El servicio gratuito para convertir tu código HTML en una web pública.2. Cómo subir tu proyecto (Desde la Web)Si no quieres usar la terminal, esta es la forma más fácil:Crea el Repo: Entra en GitHub, dale al botón "+" y elige "New repository".Configura: Ponle un nombre (ej: calendario-cosmico), déjalo en Public y marca la casilla "Add a README file".Sube los archivos: Dentro de tu nuevo repo, haz clic en "Add file" > "Upload files".Importante: Tu archivo principal debe llamarse index.html para que GitHub lo reconozca como la página de inicio.Confirma: Dale al botón "Commit changes".3. Comandos básicos (Desde la Terminal)Si prefieres usar Git en tu ordenador:# Inicializar el repositorio local
+git init
+
+# Añadir todos los archivos al área de preparación
+git add .
+
+# Guardar los cambios con un mensaje
+git commit -m "Mi primer commit: Subiendo el calendario cósmico"
+
+# Conectar con el servidor (solo la primera vez)
+git remote add origin [https://github.com/TU_USUARIO/TU_REPO.git](https://github.com/TU_USUARIO/TU_REPO.git)
+
+# Subir los archivos
+git push -u origin main
+4. ¡Activa tu página web! (GitHub Pages)Una vez subido el archivo index.html:Ve a la pestaña "Settings" de tu repositorio en GitHub.En el menú de la izquierda, busca "Pages".En "Build and deployment", asegúrate de que esté seleccionado "Deploy from a branch".En "Branch", selecciona main (o master) y la carpeta /(root). Dale a Save.Espera un minuto y GitHub te dará una URL (ej: https://tu-usuario.github.io/calendario-cosmico/).5. Buenas PrácticasMensajes claros: En los commits, pon cosas como "Añadido botón de pausa" en lugar de "cambios".README: Usa este archivo para explicar de qué trata tu proyecto.No subas claves: Nunca subas archivos con contraseñas o llaves API privadas.
